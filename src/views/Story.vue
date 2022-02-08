@@ -87,7 +87,7 @@ export default {
     },
     onComplete: function () {
       console.log(this.current);
-      if (this.current >= 2) {
+      if (this.current >= 4) {
         this.completed = true;
       } else {
         this.current++;

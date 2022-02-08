@@ -16,29 +16,29 @@
       <v-card class="card mx-auto">
         <div class="lottie">
           <lottie-animation path="valentines.json" />
-          <!-- <v-card-title class="title-card"
-            >Happy Valentines Jimbles &#128536;</v-card-title
-          > -->
+
         </div>
       </v-card>
       <v-card class="desc mx-auto mt-5">
-        <v-card-title>AGUY</v-card-title>
+        <v-card-title class=" title-card"
+          >Jimbles, I have fallen in love with you for</v-card-title
+        >
         <div class="clock mx-auto">
           <v-card color=" time grey lighten-4">
             <div>{{ timer.days }}</div>
-            <div class="time-sub">{{timerLabel.days}}</div></v-card
+            <div class="time-sub">{{ timerLabel.days }}</div></v-card
           >
           <v-card color=" time grey lighten-4">
             <div>{{ timer.hours }}</div>
-            <div class="time-sub">{{timerLabel.hours}}</div></v-card
+            <div class="time-sub">{{ timerLabel.hours }}</div></v-card
           >
           <v-card color=" time grey lighten-4">
             <div>{{ timer.minutes }}</div>
-            <div class="time-sub">{{timerLabel.minutes}}</div></v-card
+            <div class="time-sub">{{ timerLabel.minutes }}</div></v-card
           >
           <v-card color=" time grey lighten-4">
             <div>{{ timer.seconds }}</div>
-            <div class="time-sub">{{timerLabel.seconds}}</div></v-card
+            <div class="time-sub">{{ timerLabel.seconds }}</div></v-card
           >
         </div>
 
@@ -87,9 +87,12 @@ export default {
   }
 }
 .title-card {
-  font-size: 0.9rem;
-  font-weight: bold;
-  justify-content: center;
+  font-size: 1.1rem;
+  @media only screen and (max-width: 500px) {
+    font-size: 0.92rem;
+    font-weight: bold;
+  }
+
 }
 
 .card {
@@ -106,6 +109,11 @@ export default {
 .desc {
   width: 50%;
   min-height: 190px;
+  .headline {
+    @media only screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
+  }
 
   .clock {
     width: 90%;
