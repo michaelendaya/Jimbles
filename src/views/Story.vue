@@ -138,7 +138,7 @@ export default {
 <style lang="scss" scoped>
 .contents {
   height: 100%;
-  background: #2c2f33;
+  background: #FFC0CB;
 }
 .container {
   display: flex;
